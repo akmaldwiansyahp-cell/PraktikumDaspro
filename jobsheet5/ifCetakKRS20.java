@@ -17,5 +17,7 @@ public class ifCetakKRS20{
             System.out.println("Regristrasi ditolak");
             System.out.println("Silahkan lunasi UKT terlebih dahulu");
         }
+
+        scanner.close();
     }
 }
