@@ -6,13 +6,17 @@ public class ifCetakKRS20{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Masukkan Angka yang diinginkan: ");
-        int angka = scanner.nextInt();
+        System.out.print("Apakah memiliki kartu mahasiswa? (true/false): ");
+        boolean isKartu = scanner.nextBoolean();
+        System.out.print("Apakah sudah melakukan registrasi online? (true/false): ");
+        boolean isRegistrasi = scanner.nextBoolean();
 
-        if(angka % 2 == 0){
-            System.out.println("Angka tersebut adalah genap");
+        if(isKartu){
+            System.out.println("Boleh masuk");
+        }else if(isRegistrasi){
+            System.out.println("Boleh masuk");
         }else{
-            System.out.println("Angka tersebut adalah ganjil");
+            System.out.println("Tidak boleh masuk");
         }
     }
 }
