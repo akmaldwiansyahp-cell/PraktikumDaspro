@@ -35,6 +35,7 @@ public class switchCetakKRS20 {
                 System.out.println("KRS Semester 8 ditampilkan");
                 break;
             default:
+                System.out.println("Semester tidak valid");
                 break;
         }
     }
