@@ -5,19 +5,14 @@ import java.util.Scanner;
 public class ifCetakKRS20{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("---Cetak KRS---");
-        System.out.print("Apakah UKT sudah lunas (true/false): ");
-        boolean uktLunas = scanner.nextBoolean();
 
-        if (uktLunas) {
-            System.out.println("Pembayaran terverivikasi");
-            System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA");
+        System.out.print("Masukkan Angka yang diinginkan: ");
+        int angka = scanner.nextInt();
+
+        if(angka % 2 == 0){
+            System.out.println("Angka tersebut adalah genap");
         }else{
-            System.out.println("Regristrasi ditolak");
-            System.out.println("Silahkan lunasi UKT terlebih dahulu");
+            System.out.println("Angka tersebut adalah ganjil");
         }
-
-        scanner.close();
     }
 }
