@@ -17,8 +17,14 @@ public class Tugas2 {
                 }else if(jenis == 2){
                     total += durasi * 2000;
                 }
+            }else if(jenis == 0){
+                System.out.println("Program dimatikan");
+                break;
+            }else{
+                System.out.println("Input kendaraan salah! Tolong input kembali");
+                continue;
             }
         }while(jenis != 0);
-        System.out.println(total);
+        System.out.println("Total biaya parkir hari ini adalah Rp." + total);
     }
 }

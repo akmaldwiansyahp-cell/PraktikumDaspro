@@ -10,9 +10,11 @@ public class Tugas1 {
             jmlTiket = sc.nextInt();
             if(jmlTiket > 4){
                 totalBiaya += jmlTiket * hargaTiket - (jmlTiket * hargaTiket * 0.1);
+                System.out.println("b");
                 totalTiket += jmlTiket;
             }else if(jmlTiket > 10){
                 totalBiaya += jmlTiket * hargaTiket - (jmlTiket * hargaTiket * 0.15);
+                System.out.println("a");
                 totalTiket += jmlTiket;
             }else if(jmlTiket <= 4 && jmlTiket > 0){
                 totalBiaya += hargaTiket;
@@ -28,6 +30,6 @@ public class Tugas1 {
             i++;
         }
         System.out.println("Total biaya untuk hari ini adalah " + totalBiaya);
-        System.out.println(totalTiket);
+        System.out.println("Total tiket untuk hari ini adalah " + totalTiket);
     }
 }
