@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class NilaiKelompok {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = 1, nilai, iTerbesar = 0;
+        float totalNilai, rataNilai, rataTerbesar = 0;
+        while(i <= 6){
+            System.out.println("\nKelompok " + i);
+            totalNilai = 0;
+            for(int j = 1; j <= 5; j++){
+                System.out.print("  Nilai dari kelompok penilai " + j + ": ");
+                nilai = sc.nextInt();
+                totalNilai += nilai;
+            }
+            rataNilai = totalNilai / 5;
+            System.out.println("Kelompok " + i + ": nilai rata-rata = " + rataNilai);
+    
+            if(rataNilai > rataTerbesar){
+            rataTerbesar = rataNilai;
+            iTerbesar = i;
+            }
+            i++;
+        }
+        System.out.println("\nRata - rata terbesar adalah kelompok " + iTerbesar + " dengan nilai " + rataTerbesar);
+    }
+}
