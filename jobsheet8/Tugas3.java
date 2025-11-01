@@ -4,7 +4,7 @@ public class Tugas3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int totalPelanggan = 0, totalItem = 0, jmlhPelanggan, item = 0;
+        int totalPelanggan = 0, totalItem = 0, jmlhPelanggan, item;
 
         System.out.print("Jumlah cabang cafe: ");
         int jmlhCabang = sc.nextInt();
