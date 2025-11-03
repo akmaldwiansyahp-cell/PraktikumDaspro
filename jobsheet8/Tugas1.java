@@ -8,9 +8,23 @@ public class Tugas1 {
         System.out.print("Masukkan nilai n: ");
         int n = sc.nextInt();
         for(int i = 1; i <= n; i++){
-            kuadrat = i * i;
-            total += kuadrat;
-            System.out.println("n -> " + i + " = " + kuadrat + " = "+ total);
+            System.out.print("n -> " + i + " = ");
+            for(int j = 1; j <= i; j++){
+                kuadrat = j * j;
+                total += kuadrat;
+
+                System.out.print(kuadrat);
+
+                if(j < i){
+                    System.out.print(" + ");
+                }
+            }
+
+            if(i > 1){
+                System.out.println(" = " + total);
+            }else{
+                System.out.println();
+            }
         }
     }
 }
